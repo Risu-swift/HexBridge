@@ -1,5 +1,5 @@
 ﻿{
-  "name": "com.interactive.jexbridge",
+  "name": "com.interactive.hexbridge",
   "version": "0.0.1",
   "displayName": "Hex Bridge",
   "description": "Use this package to convert and connect to Serial Communications and hardware",
