@@ -34,9 +34,8 @@ public class ConnectionManager : MonoBehaviour
         communicationManager.StopConnection();
     }
     
-    public void WriteValue(string dataToSend)
+    public void WriteValue(byte[] dataToSend)
     {
-        byte[] messageBytes = System.Text.Encoding.UTF8.GetBytes(dataToSend);
-        communicationManager.WriteValue(messageBytes);
+        communicationManager.WriteValue(dataToSend);
     }
 }
