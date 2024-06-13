@@ -1,0 +1,5 @@
+#GameService Rules
+-keep class com.example.bluetoothcomm.BluetoothConnector** { *; }
+
+#Don't obfuscate. We only need dead code striping.
+-dontobfuscate

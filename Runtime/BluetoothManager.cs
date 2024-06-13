@@ -40,7 +40,7 @@ public class BluetoothManager : CommunicationManager
 
         }   
 
-        unity3dbluetoothplugin = new AndroidJavaClass("com.example.bluetoothcomm.BluetoothConnector");
+        unity3dbluetoothplugin = new AndroidJavaClass("com.interactive.bluetoothcomm.BluetoothConnector");
         BluetoothConnector = unity3dbluetoothplugin.CallStatic<AndroidJavaObject>("getInstance");
     }
 
@@ -69,6 +69,7 @@ public class BluetoothManager : CommunicationManager
     public void ConnectionStatus(string status)
     {
         Toast("Connection Status: " + status);
+        Debug.Log("Connection Status: " + status);
         ConnectStatus(status);
     }
     
